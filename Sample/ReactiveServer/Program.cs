@@ -1,17 +1,12 @@
 ﻿namespace ReactiveServer
 {
-    using System;
-    using System.Text;
-    using System.Reactive;
-    using System.Linq;
-    using System.Reactive.Linq;
     using ReactiveProtocol;
     using ReactiveSockets;
-    using System.Reactive.Concurrency;
+    using System;
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var port = 1055;
             if (args.Length > 0)

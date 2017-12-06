@@ -1,16 +1,15 @@
 ﻿namespace ReactiveSockets.Tests
 {
-    using System;
-    using System.Linq;
-    using System.Reactive.Subjects;
-    using System.Threading;
     using Moq;
     using ReactiveProtocol;
     using ReactiveSockets;
-    using Xunit;
-    using System.Reactive.Linq;
-    using System.Reactive.Concurrency;
+    using System;
     using System.Collections.Concurrent;
+    using System.Linq;
+    using System.Reactive.Concurrency;
+    using System.Reactive.Linq;
+    using System.Threading;
+    using Xunit;
 
     public class SampleProtocolTests
     {

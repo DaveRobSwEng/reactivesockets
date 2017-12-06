@@ -1,14 +1,14 @@
 ﻿namespace ReactiveClient
 {
+    using ReactiveProtocol;
+    using ReactiveSockets;
     using System;
     using System.Reactive.Concurrency;
     using System.Reactive.Linq;
-    using ReactiveProtocol;
-    using ReactiveSockets;
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             try
             {

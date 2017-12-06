@@ -1,8 +1,7 @@
-﻿using System;
-using System.IO;
-
-namespace ReactiveSockets
+﻿namespace ReactiveSockets
 {
+    using System;
+    using System.IO;
     using System.Net.Sockets;
     using System.Threading.Tasks;
     using Diagnostics;

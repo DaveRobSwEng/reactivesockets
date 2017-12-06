@@ -263,7 +263,7 @@
             this.readSubscription = Observable.Defer(() => 
                 {
                     var buffer = new byte[this.ReceiveBufferSize];
-                    return Observable.FromAsyncPattern<byte[], int, int, int>(stream.BeginRead, stream.EndRead)(buffer, 0, buffer.Length)
+                    return Observable.FromAsync(() => stream.ReadAsync(buffer, 0, buffer.Length))
                         .Select(x => buffer.Take(x).ToArray());
                 })
                 .Repeat()

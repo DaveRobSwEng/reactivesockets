@@ -1,18 +1,15 @@
 ﻿namespace ReactiveProtocol
 {
+    using ReactiveSockets;
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Reactive.Concurrency;
     using System.Reactive.Linq;
-    using System.Reactive.Subjects;
     using System.Text;
     using System.Threading.Tasks;
-    using ReactiveSockets;
 
     /// <summary>
-    /// Implements a communication channel over a socket that 
-    /// has a fixed length header and a variable length string 
+    /// Implements a communication channel over a socket that
+    /// has a fixed length header and a variable length string
     /// payload.
     /// </summary>
     public class StringChannel : IChannel<string>
